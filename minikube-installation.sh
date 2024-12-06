@@ -10,8 +10,8 @@ sudo mv minikube /usr/local/bin/
 curl -LO "https://dl.k8s.io/release/v1.26.0/bin/linux/amd64/kubectl"
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
-minikube start --driver=virtualbox
-minikube start --driver=docker
-minikube status
+sudo minikube start --driver=virtualbox
+sudo minikube start --driver=docker
+sudo minikube status
 kubectl get nodes
-minikube dashboard
+
